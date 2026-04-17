@@ -46,7 +46,7 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-collections", from: "1.1.4"),
 
         // Read OpenAPI documents
-        .package(url: "https://github.com/mattpolzin/OpenAPIKit", revision: "4.0.0-alpha.4"),
+        .package(url: "https://github.com/mattpolzin/OpenAPIKit", revision: "4.0.0-alpha.5"),
         .package(url: "https://github.com/jpsim/Yams", "4.0.0"..<"7.0.0"),
 
         // CLI Tool
