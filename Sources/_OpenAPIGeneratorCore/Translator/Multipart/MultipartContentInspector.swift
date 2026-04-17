@@ -316,7 +316,7 @@ extension FileTranslator {
         guard let (repetitionKind, candidateSource) = try inferSchema(schema) else { return nil }
 
         let finalContentTypeSource: MultipartPartInfo.ContentTypeSource
-        if let encoding, let contentType = encoding.contentTypes.first, encoding.contentTypes.count == 1 {
+        if let encoding, let contentType = encoding.contentType {
             finalContentTypeSource = try .explicit(contentType.asGeneratorContentType)
         } else {
             finalContentTypeSource = candidateSource
